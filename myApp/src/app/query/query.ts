@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { createSelector, select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { Hoge } from '../domain/models';
+import { Hoge } from '../model/models';
 import { selectFeature, State } from '../store/hoge/store';
 
 @Injectable({

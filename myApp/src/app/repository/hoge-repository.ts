@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Hoge } from '../domain/models';
+import { Hoge } from '../model/models';
 import { Repository } from './repository';
 
 @Injectable({

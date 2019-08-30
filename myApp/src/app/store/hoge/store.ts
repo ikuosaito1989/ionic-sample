@@ -1,5 +1,5 @@
 import { Action, createAction, createFeatureSelector, createReducer, on, props } from '@ngrx/store';
-import { Hoge } from 'src/app/domain/models';
+import { Hoge } from 'src/app/model/models';
 
 export interface State {
   hoge: Hoge | null;
