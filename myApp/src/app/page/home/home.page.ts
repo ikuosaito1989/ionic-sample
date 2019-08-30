@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HogeUsecase } from 'src/app/usecase/hoge-usecase';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-  constructor() {}
-  ngOnInit() {}
+  constructor(private usecase: HogeUsecase) {}
+  ngOnInit() {
+    this.usecase.init();
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HogeUsecase } from '../../usecase/hoge-usecase';
 
 @Component({
   selector: 'app-list',
@@ -9,7 +10,7 @@ export class ListPage implements OnInit {
   private selectedItem: any;
   private icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane', 'american-football', 'boat', 'bluetooth', 'build'];
   public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
+  constructor(private usecase: HogeUsecase) {
     for (let i = 1; i < 11; i++) {
       this.items.push({
         title: `Item ${i}`,
@@ -19,7 +20,9 @@ export class ListPage implements OnInit {
     }
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.usecase.reset();
+  }
   // add back when alpha.4 is out
   // navigate(item) {
   //   this.router.navigate(['/list', JSON.stringify(item)]);
