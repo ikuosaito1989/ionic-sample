@@ -10,6 +10,6 @@ export class HogeRepository {
   constructor(private repository: Repository) {}
 
   fetchHoge(): Observable<Hoge> {
-    return this.repository.fetch(`http://localhost:3000/api/video/teachers/search/testa`);
+    return this.repository.get(`http://localhost:3000/api/video/teachers/search/testa`);
   }
 }
