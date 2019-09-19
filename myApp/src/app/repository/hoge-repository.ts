@@ -12,6 +12,5 @@ export class HogeRepository {
   fetchHoge(): Observable<Hoge> {
     const result: Hoge = { title: 'test', body: 'test1' };
     return of(result);
-    // return this.repository.get(`http://localhost:3000/api/video/teachers/search/testa`);
   }
 }
