@@ -1,2 +1,5 @@
 # ionic-sample
-This is an ionic sample. It is appropriate.
+
+made according to the following architecture.
+
+![frontend architecture](https://pbs.twimg.com/media/D_0A4uBUEAsudBs.jpg "sample")
